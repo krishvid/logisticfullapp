@@ -10,7 +10,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const backendUrl = `process.env.REACT_APP_BASE_UR`L;
+  const backendUrl = process.env.REACT_APP_BASE_URL;
   const navi = useNavigate();
 
   const handleSubmit = async (e) => {
